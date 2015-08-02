@@ -22,6 +22,7 @@
 					<h1 class="title-super text-thin">Guillermo Jimenez</h1>
 					<h4>My Portafolio</h4>
 				</div>
+			</div>
  			<header class="header">
      			<div class="header__inner">
 					<a id="menu" class="header__menu">
@@ -36,7 +37,7 @@
 					<hr>
 				</div>
 			</div>
-  			<nav id="drawer"class="nav">
+  			<nav id="drawer" class="nav">
 		    	<ul class="nav__list">
 			        <li class="nav__item"><a href="#">Portafolio</a></li>
 			        <li class="nav__item"><a href="#">Resume</a></li>
@@ -67,7 +68,7 @@
 						<h3 class="text-uppercase"> Tech Project </h3>
 						<p>Clik in the image to more info...</p>
 					</section>	
-					</div>
+				</div>
 				<div class="col-md-4">
 					<img class="img-responsive" src="https://placeimg.com/555/300/animals" data-toggle="modal" data-target="#project_animals" alt="Animal Project">
 					<section>
@@ -76,82 +77,80 @@
 					</section>		
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="https://placeimg.com/555/300/nature" data-toggle="modal" data-target="#project_nature" alt="Project 3">
+					<img class="img-responsive" src="https://placeimg.com/555/300/nature" data-toggle="modal" data-target="#project_nature" alt="Nature Project">
 					<section>
 						<h3 class="text-uppercase"> Nature Project </h3>
 						<p>Clik in the image to more info...</p>
 					</section>	
 				</div>
 			</div>	
-		</div>
-
+		
 		<!-- Modal -->
-		<div class="modal fade" id="project_tech" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Tech Project</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img class="img-responsive" src="https://placeimg.com/555/300/tech">
-		        This was my first project in this class about tech. I hope to enjoy.s
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
+			<div class="modal fade" id="project_tech" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="myModalLabel">Tech Project</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="https://placeimg.com/555/300/tech" alt="Tech Project">
+			        This was my first project in this class about tech. I hope to enjoy.s
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="project_animals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="myModalLabel">Animals Project</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="https://placeimg.com/555/300/animals" alt="Animal Project">
+			        This was my second project in this class about animals. I hope to enjoy.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="project_nature" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="myModalLabel">Natural Project</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="https://placeimg.com/555/300/nature" alt="Nature Project">
+			        This was my thirth project in this class about natural. I hope to enjoy.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<script>
+			/*
+	       * Open the drawer when the menu ison is clicked.
+	       */
+	          var menu = document.querySelector('#menu');
+		      var main = document.querySelector('main');
+		      var drawer = document.querySelector('.nav');
+
+		      menu.addEventListener('click', function(e) {
+		        drawer.classList.toggle('open');
+		        e.stopPropagation();
+		      });
+		      main.addEventListener('click', function() {
+		        drawer.classList.remove('open');
+		      });
+
+			</script>
 		</div>
-		<div class="modal fade" id="project_animals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Animals Project</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img class="img-responsive" src="https://placeimg.com/555/300/animals">
-		        This was my second project in this class about animals. I hope to enjoy.
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<div class="modal fade" id="project_nature" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Natural Project</h4>
-		      </div>
-		      <div class="modal-body">
-		        <img class="img-responsive" src="https://placeimg.com/555/300/nature">
-		        This was my thirth project in this class about natural. I hope to enjoy.
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-	      var menu = document.querySelector('#menu');
-	      var main = document.querySelector('main');
-	      var drawer = document.querySelector('.nav');
-
-	      menu.addEventListener('click', function(e) {
-	        drawer.classList.toggle('open');
-	        e.stopPropagation();
-	      });
-	      main.addEventListener('click', function() {
-	        drawer.classList.remove('open');
-	      });
-
-	    </script>
-
 	</body>
 </html>	
