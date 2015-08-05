@@ -5,12 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Portafolio</title>
-		<link href='http://fonts.googleapis.com/css?family=Dosis:300,500' rel='stylesheet' type='text/css'>		
+		<link href="http://fonts.googleapis.com/css?family=Dosis:300,500" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/responsive.css">
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -23,29 +21,29 @@
 					<h4>My Portafolio</h4>
 				</div>
 			</div>
- 			<header class="header">
-     			<div class="header__inner">
+			<header class="header">
+				<div class="header__inner">
 					<a id="menu" class="header__menu">
-          				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            				<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          				</svg>
-       				</a>
-       			</div>
-    		</header>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+						</svg>
+					</a>
+				</div>
+			</header>
 			<div class="row">
 				<div class="col-md-12">
 					<hr>
 				</div>
 			</div>
-  			<nav id="drawer" class="nav">
-		    	<ul class="nav__list">
-			        <li class="nav__item"><a href="#">Portafolio</a></li>
-			        <li class="nav__item"><a href="#">Resume</a></li>
-			        <li class="nav__item"><a href="#">Arcade</a></li>
-			        <li class="nav__item"><a href="#">Neighborhood</a></li>
-			        <li class="nav__item"><a href="#">Blog</a></li>
-		     	</ul>
-		    </nav>
+			<nav id="drawer" class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#">Portafolio</a></li>
+					<li class="nav__item"><a href="#">Resume</a></li>
+					<li class="nav__item"><a href="#">Arcade</a></li>
+					<li class="nav__item"><a href="#">Neighborhood</a></li>
+					<li class="nav__item"><a href="#">Blog</a></li>
+				</ul>
+			</nav>
 			<div id="line2" class="row">
 				<div class="col-md-12">
 					<hr>
@@ -53,7 +51,11 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<img class="img-responsive" src="https://placeimg.com/1200/350/tech" alt="Portada">
+					<picture>
+						<source media="(min-width: 750px)" srcset="image/tech_l.jpg" />
+						<source media="(min-width: 500px)" srcset="image/tech_m.jpg" />
+						<img src="image/tech_s.jpg" alt="Horses in Hawaii">
+					</picture>
 				</div>
 			</div>
 			<div class="row">
@@ -67,90 +69,79 @@
 					<section>
 						<h3 class="text-uppercase"> Tech Project </h3>
 						<p>Clik in the image to more info...</p>
-					</section>	
+					</section>
 				</div>
 				<div class="col-md-4">
 					<img class="img-responsive" src="https://placeimg.com/555/300/animals" data-toggle="modal" data-target="#project_animals" alt="Animal Project">
 					<section>
 						<h3 class="text-uppercase"> Animals Project </h3>
 						<p>Clik in the image to more info...</p>
-					</section>		
+					</section>
 				</div>
 				<div class="col-md-4">
 					<img class="img-responsive" src="https://placeimg.com/555/300/nature" data-toggle="modal" data-target="#project_nature" alt="Nature Project">
 					<section>
 						<h3 class="text-uppercase"> Nature Project </h3>
 						<p>Clik in the image to more info...</p>
-					</section>	
+					</section>
 				</div>
-			</div>	
-		
-		<!-- Modal -->
-			<div class="modal fade" id="project_tech" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h4 class="modal-title" id="myModalLabel">Tech Project</h4>
-			      </div>
-			      <div class="modal-body">
-			        <img class="img-responsive" src="https://placeimg.com/555/300/tech" alt="Tech Project">
-			        This was my first project in this class about tech. I hope to enjoy.s
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
 			</div>
-			<div class="modal fade" id="project_animals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h4 class="modal-title" id="myModalLabel">Animals Project</h4>
-			      </div>
-			      <div class="modal-body">
-			        <img class="img-responsive" src="https://placeimg.com/555/300/animals" alt="Animal Project">
-			        This was my second project in this class about animals. I hope to enjoy.
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
+<!-- Modal -->
+<!-- Modal for Project Tech -->
+			<div class="modal fade" id="project_tech" tabindex="-1" role="dialog" aria-labelledby="ProjectLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="ProjectLabel">Tech Project</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="https://placeimg.com/555/300/tech" alt="Tech Project">
+							This was my first project in this class about tech. I hope to enjoy.s
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="modal fade" id="project_nature" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h4 class="modal-title" id="myModalLabel">Natural Project</h4>
-			      </div>
-			      <div class="modal-body">
-			        <img class="img-responsive" src="https://placeimg.com/555/300/nature" alt="Nature Project">
-			        This was my thirth project in this class about natural. I hope to enjoy.
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
+<!-- Modal for Animals Projects -->
+			<div class="modal fade" id="project_animals" tabindex="-1" role="dialog" aria-labelledby="AnimalsLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="AnimalsLabel">Animals Project</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="https://placeimg.com/555/300/animals" alt="Animal Project">
+							This was my second project in this class about animals. I hope to enjoy.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<script>
-			/*
-	       * Open the drawer when the menu ison is clicked.
-	       */
-	          var menu = document.querySelector('#menu');
-		      var main = document.querySelector('main');
-		      var drawer = document.querySelector('.nav');
-
-		      menu.addEventListener('click', function(e) {
-		        drawer.classList.toggle('open');
-		        e.stopPropagation();
-		      });
-		      main.addEventListener('click', function() {
-		        drawer.classList.remove('open');
-		      });
-
-			</script>
+<!-- Modal forr Nature Proyect -->
+			<div class="modal fade" id="project_nature" tabindex="-1" role="dialog" aria-labelledby="NatureLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="NatureLabel">Natural Project</h4>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive" src="https://placeimg.com/555/300/nature" alt="Nature Project">
+							This was my thirth project in this class about natural. I hope to enjoy.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="js/menu-hamburgers.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/picturefill.min.js"></script>
 	</body>
-</html>	
+</html>
